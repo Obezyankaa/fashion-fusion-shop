@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { notFound } from "next/navigation"
 
 export default function ReviewDetails({ params }: {
     params: {
@@ -6,6 +7,9 @@ export default function ReviewDetails({ params }: {
         reviewId: string,
     }
 }) {
+    if (params.reviewId > 1000) {
+        return notFound()
+    } 
     return (
         <>
         <div>
