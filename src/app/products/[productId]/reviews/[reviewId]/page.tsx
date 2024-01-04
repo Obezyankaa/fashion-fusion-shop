@@ -12,7 +12,7 @@ export default function ReviewDetails({ params }: {
             Product {params.productId}
             Reviews {params.reviewId}
             </div>
-            <Link href="/" ></Link>
+            <Link href="/" >вернуться на главную</Link>
         </>
      )
  }

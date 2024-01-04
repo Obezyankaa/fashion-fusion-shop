@@ -20,6 +20,9 @@ export default function Home() {
       <div>
         <Link href="/products">products</Link>
       </div>
+      <div>
+        <Link href="/docs">docs</Link>
+      </div>
     </>
   );
 }

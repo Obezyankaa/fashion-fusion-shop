@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProductList() {
     return (
       <>
@@ -5,6 +7,7 @@ export default function ProductList() {
         <div> product one</div>
         <div> product two</div>
         <div> product three</div>
+        <Link href="/">вернуться на главную</Link>
       </>
     );
 }
