@@ -7,7 +7,7 @@ export default function ReviewDetails({ params }: {
         reviewId: string,
     }
 }) {
-    if (params.reviewId > 1000) {
+    if (parseInt(params.reviewId) > 1000) {
         return notFound()
     } 
     return (
