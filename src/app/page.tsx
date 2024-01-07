@@ -23,6 +23,9 @@ export default function Home() {
       <div>
         <Link href="/complex-dashboard">/complex-dashboard</Link>
       </div>
+      <div>
+        <Link href="/f1">f1</Link>
+      </div>
     </>
   );
 }
