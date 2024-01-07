@@ -7,5 +7,5 @@ export default function ArchivedNotification() {
       <div>Archived Notification</div>
       <Link href="/complex-dashboard">Default</Link>
     </Card>
-  );
+  )
 }
