@@ -1,0 +1,133 @@
+:root {
+    font-family: Neue-Machina, system-ui, Ubuntu, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color-scheme: light dark;
+
+    /* font-family */
+    --Neue-Machina: Neue-Machina;
+    --Ubuntu: Ubuntu;
+
+    /* color */
+    /* Общие переменные для цветов, которые не меняются */
+    --primary-white-background-f-0-f-2-f-5: #F0F2F5;
+    --primary-blue-75-bbfd: #75BBFD;
+    --black-75BBFD: #27292F;
+    --secondary-red-fd-7575: #FB6A6A;
+    --secondary-yellow-fd-7575: #FFC774;
+    --secondary-dark-gray-525459: #525459;
+    --secondary-gray-939497: #939497;
+    --secondary-light-gray-eaeaeb: #DCDDDE;
+
+
+    /* Стили для светлой темы (по умолчанию) */
+    --background-color: #F0F2F5;
+    /* Светлый фон */
+    --text-color: #27292F;
+    //  цвет ддя navbar в открытом состоянии 
+    --text-color-open: #F0F2F5;
+    --background-color-navbar: #27292F;
+    /* Темный текст */
+    --link-color: #007bff;
+    /* Цвет ссылок */
+    --button-background-color: #fff;
+    /* Фон кнопок */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Стили для темной темы */
+        --background-color: #27292F;
+        /* Темный фон */
+        --text-color: #F0F2F5;
+        //  цвет ддя navbar в открытом состоянии 
+        --text-color-open: #27292F;
+        --background-color-navbar: #F0F2F5;
+        /* Светлый текст */
+        --link-color: #75BBFD;
+        /* Цвет ссылок */
+        --button-background-color: #525459;
+        /* Фон кнопок */
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    /* Убрать подчеркивание */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Подчеркивание при наведении */
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Убрать маркеры */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Убирает пробел под изображением */
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    /* Наследовать шрифт от body */
+    color: inherit;
+    /* Наследовать цвет от body */
+}
+
+button {
+    cursor: pointer;
+    /* Курсор в виде указателя */
+}
+
+/* и так далее для других отступов */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Меньший размер шрифта для мобильных устройств */
+    }
+
+    h1 {
+        font-size: 24px;
+        /* Меньший размер для заголовков */
+    }
+
+    /* и так далее для других элементов */
+}

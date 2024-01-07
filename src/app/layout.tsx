@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import './global.scss'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <header
           style={{
-            backgroundColor: "lightblue",
+            backgroundColor: "#267690",
             padding: "1rem",
           }}
         >
@@ -33,7 +34,7 @@ export default function RootLayout({
 
         <footer
           style={{
-            backgroundColor: "ghostwhite",
+            backgroundColor: "#424274",
             padding: "1rem",
           }}
         >
