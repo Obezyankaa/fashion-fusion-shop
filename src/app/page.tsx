@@ -8,20 +8,23 @@ export default function Home() {
       <div>
         <Link href="/about">about</Link>
       </div>
-
       <div>
         <Link href="/profile">profile</Link>
       </div>
-
       <div>
         <Link href="/blog">blog</Link>
       </div>
-
       <div>
         <Link href="/products">products</Link>
       </div>
       <div>
         <Link href="/docs">docs</Link>
+      </div>
+      <div>
+        <Link href="/complex-dashboard">/complex-dashboard</Link>
+      </div>
+      <div>
+        <Link href="/f1">f1</Link>
       </div>
     </>
   );
