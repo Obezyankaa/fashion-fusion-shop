@@ -26,6 +26,9 @@ export default function Home() {
       <div>
         <Link href="/f1">f1</Link>
       </div>
+      <div>
+        <Link href="/photo-feed">photo-feed</Link>
+      </div>
     </>
   );
 }
